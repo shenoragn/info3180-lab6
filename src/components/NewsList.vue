@@ -9,21 +9,18 @@
             <label class="visually-hidden" for="search">Search</label>
             <input type="search" name="search" v-model="searchTerm" id="search" class="form-control mb-2 mr-sm-2" placeholder="Entersearch term here" />
             <button class="btn btn-primary mb-2">Search</button>
-            <NewsList></NewsList>
         </div>
         <p>You are searching for {{ searchTerm }}</p>
     </form>
 </template>
 
 <script>
-import NewsList from '@/components/NewsList.vue'
 export default {
     data() {
         return {
             articles: [],
             searchTerm: ''
-        },
-        components: { NewsList }  
+        }, 
     },
     methods: {
         searchNews() {

@@ -1,14 +1,17 @@
 <template>
     <div class="news container">
         <h2>News</h2>
+        <NewsList></NewsList>
     </div>
 </template>
 
 <script>
-    export default {
-        data() {
-    return {};
+import NewsList from '@/components/NewsList.vue'
+export default {
+    data() {
+        return {};
     },
+    components: { NewsList } 
 };
 </script>
 

@@ -23,6 +23,6 @@ const router = createRouter({
       component: () => import('../views/NewsView.vue')
       },
   ]
-})
+});
 
 export default router
